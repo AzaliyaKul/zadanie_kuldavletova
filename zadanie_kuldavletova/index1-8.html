@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Курс JavaScript</title>
+	<script>
+		/*let surname='Карамзин';
+		let name='Виктор';
+		let patronymic='Геннадьевич';
+		let ocupation='Преподователь спец.дисциплин';
+		let degree='Высшее';
+		let category='Первая';
+		let education='Московская государственный институт электронной техники';
+		let discipline='Информатика';
+		let note='';*/
+		/*let arr = ['Карамзин', 'Виктор', 'Геннадьевич', 'Преподователь спец.дисциплин', 'Высшее',
+		'Первая', 'Московская государственный институт электронной техники', 'Информатика'];*/
+		/*let zad = {
+			surname:'Карамзин',
+			name:'Виктор',
+			patronymic:'Геннадьевич',
+			ocupation:'Преподователь спец.дисциплин',
+			degree:'Высшее',
+			category:'Первая',
+			education:'Московская государственный институт электронной техники',
+			disciplin:'Информатика',
+			none:' ',
+		};*/ 
+
+		
+
+		/*let zad1 = `
+			<b> ${zad.surname} ${zad.name} ${zad.patronymic} </b><br>
+			<i>Должность:</i> ${zad.ocupation}<br>
+			<i>Уровень образования:</i> ${zad.degree}<br>
+			<i>Категория:</i> ${zad.category}<br>
+			<i>Образование:</i> ${zad.education}<br>
+			<i>Дисциплина:</i> ${zad.discipline}<br>
+		`;*/
+/*
+		let zad1 = `
+			<b> ${zad.surname} ${zad.name} ${zad.patronymic} </b><br>
+			<i>Должность:</i> ${zad.ocupation}<br>
+			<i>Уровень образования:</i> ${zad.degree}<br>
+			<i>Категория:</i> ${zad.category}<br>
+			<i>Образование:</i> ${zad.education}<br>
+			<i>Дисциплина:</i> ${zad.discipline}<br>
+
+		`;
+		*/
+		let discipline=[ 'Информатика', 'Основы прогромирования', 'Инжинерная графика'];
+		let zad = {
+			surname:'Карамзин',
+			name:'Виктор',
+			patronymic:'Геннадьевич',
+			ocupation:'Преподователь спец.дисциплин',
+			degree:'Высшее',
+			category:'Первая',
+			education:'Московская государственный институт электронной техники',
+			discipline,
+			none:' ',
+		};
+		let zad1 = `
+			<b> ${zad.surname} ${zad.name} ${zad.patronymic} </b><br>
+			<i>Должность:</i> ${zad.ocupation}<br>
+			<i>Уровень образования:</i> ${zad.degree}<br>
+			<i>Категория:</i> ${zad.category}<br>
+			<i>Образование:</i> ${zad.education}<br>
+			<i>Дисциплина:</i><ul><li>${zad.discipline[0]}</li><br><li>${zad.discipline[1]}</li><br><li>${zad.discipline[2]}</li><br></ul>
+			<i>Примечание</i> 
+		`;
+		
+	</script>
+</head>
+
+<body>
+	
+	<header>
+		<h1 align = "center">Введение в JavaScript</h1>
+	</header>	
+	
+	<div class="content">
+		<!--
+		<script>
+			document.write('<b>' + surname + ' ' + name + ' ' + patronymic + '</b>' + '<br>');
+			document.write('<i>' + 'Должность: ' + '</i>' + ocupation + '<br>');
+			document.write('<i>' + 'Уровень образования: ' + '</i>' + degree + '<br>');
+			document.write('<i>' + 'Категория: ' + '</i>' + category + '<br>');
+			document.write('<i>' + 'Образование: ' + '</i>' + education + '<br>');
+			document.write('<i>' + 'Дисциплина: ' + '</i>' + discipline);
+		</script>
+		-->
+		<!--
+		<script>
+			document.write('<b>' + arr[0] + ' ' + arr[1] + ' ' + arr[2] + '</b>' + '<br>');
+			document.write('<i>' + 'Должность: ' + '</i>' + arr[3] + '<br>');
+			document.write('<i>' + 'Уровень образования: ' + '</i>' + arr[4] + '<br>');
+			document.write('<i>' + 'Категория: ' + '</i>' + arr[5] + '<br>');
+			document.write('<i>' + 'Образование: ' + '</i>' + arr[6] + '<br>');
+			document.write('<i>' + 'Дисциплина: ' + '</i>' + arr[7]);
+		</script>
+		-->
+		<!--
+		<script>
+			document.write('<b>' + zad.surname + ' ' + zad.name + ' ' + zad.patronymic + '</b>' + '<br>');
+			document.write('<i>' + 'Должность: ' + '</i>' + zad.ocupation + '<br>');
+			document.write('<i>' + 'Уровень образования: ' + '</i>' + zad.degree + '<br>');
+			document.write('<i>' + 'Категория: ' + '</i>' + zad.category + '<br>');
+			document.write('<i>' + 'Образование: ' + '</i>' + zad.education + '<br>');
+			document.write('<i>' + 'Дисциплина: ' + '</i>' + zad.discipline);
+		</script>
+		-->
+		
+		<script>
+			document.write(zad1);
+		</script>
+	</div>
+	
+	<footer align = "center">
+		<h3>Добро пожаловать на pechora_PROger</h3>
+		<a href="https://vk.com/pechora_proger" target="__blank">pechora_PROger</a>
+	</footer>
+
+</body>
+</html>
